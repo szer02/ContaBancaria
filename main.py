@@ -15,7 +15,7 @@ Conta.deposita(minha_conta, deposito)
 print(f"Depósito de {deposito} realizado. Saldo atual: {minha_conta['saldo']}")
 
 saque = float(input("Digite o valor a ser sacado: "))
-Conta.saca(minha_conta, saque)
+Conta.saca(minha_conta, minha_conta, saque)
 
 print("Extrato da conta:")
 Conta.extrato(minha_conta)

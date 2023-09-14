@@ -39,8 +39,8 @@ class ContaBancaria:
     da função, subtraia o valor do saldo.
     '''
     #function to check account type and make a withdrawal #função para verificar tipo de conta e realizar um saque 
-    def saca(conta, valor):
-
+    def saca(conta, tipo_conta, valor):
+        tipo_conta = tipo_conta
         if valor <= conta['saldo']:
             conta['saldo'] -= valor
             print(f'Saque {valor} realizado com sucesso. Saldo atual: {conta["saldo"]}')
